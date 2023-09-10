@@ -12,7 +12,7 @@ function Popular() {
         <button className="popular-foods__filter-btn active">All</button>
         {
           filtersData.map(filter => (
-            <Filter {...filter} />
+            <Filter key={filter.text} {...filter} />
           ))
         }
         <button className="popular-foods__filter-btn">All</button>
@@ -21,7 +21,7 @@ function Popular() {
       <div className="popular-foods__cataloge">
         {
           PopularCards.map(card => (
-            <Card {...card} />
+            <Card key={card.title} {...card} />
           ))
         }
       </div>

@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
 import Popular from './components/Popular/Popular'
+import Trending from './components/Trending/Trending'
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Hero />
       <About />
       <Popular />
+      <Trending />
     </div>
   )
 }
