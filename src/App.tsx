@@ -4,6 +4,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Popular from './components/Popular/Popular'
 import Trending from './components/Trending/Trending'
+import Subscription from './components/Subscription'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <About />
       <Popular />
       <Trending />
+      <Subscription />
     </div>
   )
 }
