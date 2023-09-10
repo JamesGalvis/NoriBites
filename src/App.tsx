@@ -5,6 +5,7 @@ import About from './components/About'
 import Popular from './components/Popular/Popular'
 import Trending from './components/Trending/Trending'
 import Subscription from './components/Subscription'
+import Footer from './components/Footer'
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Popular />
       <Trending />
       <Subscription />
+      <Footer />
     </div>
   )
 }
