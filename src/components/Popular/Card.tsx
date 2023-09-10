@@ -3,13 +3,13 @@ interface CardProps {
   title: string;
   rating: string;
   price: string;
-  active?: string;
+  active?: boolean;
 }
 
 function Card({ imagePath, price, rating, title, active }: CardProps) {
   return (
-    <article className={`popular-foods__card ${active}`}>
-      <img className="popular-foods__card-image" src={imagePath} alt="" />
+    <article className={`popular-foods__card ${active ? "active-card" : ""}`}>
+      <img className="popular-foods__card-image" src={imagePath} alt={title} />
       <h4 className="popular-foods__card-title">{title}</h4>
 
       <div className="popular-foods__card-details">
