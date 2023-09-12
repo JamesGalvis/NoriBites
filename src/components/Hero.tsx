@@ -1,12 +1,11 @@
 function Hero() {
   return (
-    <section className="hero">
+    <section className="hero"> 
       <div className="hero-image">
         <img src="src/assets/sushi-1.png" alt="Sushi" />
         <h2>
           日 <br /> 本 <br /> 食
         </h2>
-        <div className="hero-image__overlay"></div>
       </div>
 
       <div className="hero-content">

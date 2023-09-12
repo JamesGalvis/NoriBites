@@ -1,10 +1,9 @@
 function Navbar() {
-  return (
+  return ( 
     <header>
       <nav className="header__nav">
         <div className="header__logo">
           <h4>NoriBites</h4>
-          <div className="header__logo-overlay"></div>
         </div>
 
         <ul className="header__menu">

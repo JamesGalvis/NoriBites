@@ -42,11 +42,17 @@ ul {
 .container {
   max-width: 1280px;
   margin: 0 auto;
+  position: relative;
 }
 
 /* Navbar */
 .header__nav {
   display: flex;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
   overflow: hidden;
 }
 
@@ -64,14 +70,6 @@ ul {
   text-transform: uppercase;
   font-family: var(--playfair-display);
   color: #fff;
-}
-
-.header__logo-overlay {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  z-index: -1;
-  background: var(--primary-color);
 }
 
 .header__menu,
@@ -120,6 +118,8 @@ ul {
   display: flex;
   flex-direction: column;
   z-index: 5;
+  padding-top: 64px;
+  background: var(--primary-color);
 }
 
 .hero-image img {
@@ -127,14 +127,6 @@ ul {
   height: 100%;
   object-fit: contain;
   pointer-events: none;
-}
-
-.hero-image__overlay {
-  position: absolute;
-  width: 100%;
-  inset: 0;
-  background: var(--primary-color);
-  z-index: -1;
 }
 
 .hero-image h2 {
@@ -833,7 +825,14 @@ ul {
   object-fit: contain;
 }
 
+/* Popular Card Interactions */
+.popular-foods__card:hover {
+  transform: translateY(-16px);
+}
 
+.popular-foods__button:hover img {
+  margin-left: 18px;
+}
 
 .sushi__hide-scrollbar::-webkit-scrollbar {
   display: none;
