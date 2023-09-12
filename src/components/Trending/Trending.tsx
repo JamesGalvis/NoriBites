@@ -1,3 +1,4 @@
+import '../../styles/trending.css'
 import { trendingSushis, trendingDrinks } from '../../constants'
 import Section from './Section'
 

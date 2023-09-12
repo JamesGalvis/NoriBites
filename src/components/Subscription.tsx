@@ -1,3 +1,5 @@
+import '../styles/subscription.css'
+
 function Subscription() {
   return (
     <section className="subscription">
